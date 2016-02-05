@@ -1,6 +1,6 @@
 #### Link to my GitHub site:
 
-http://rmdemp.github.io
+[My GitHub website](http://rmdemp.github.io/ "Ryan Dempsey's Website")
 
 #### What did you learn about CSS padding, borders, and margin by doing this challenge?
 
