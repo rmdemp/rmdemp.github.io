@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Ryan Dempsey's Blog</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
   </head>
+
   <body>
-    <div>
+
+    <div class="header">
       <h1>Ryan Dempsey's Blog</h1>
     </div>
-    <nav>
+
+    <nav class="nav-main">
       <ul>
         <li><a href="#">About Me</a></li>
         <li><a href="#">Projects</a></li>
@@ -16,31 +22,39 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <div>
+
+    <nav class="nav-posts">
+      <!-- This should be a dropdown menu on the sidebar.  Look into <section> and<option> tags for implementation. -->
       <h4>Blog Posts:</h4>
-    </div>
-    <nav>  <!-- This should be a dropdown menu on the sidebar.  Look into <section> tag for implementation. -->
       <ul>
-        <li>2016</li>
-        <ul>
-          <li>January</li>
-            <ul>
-              <li><a href="git.html">23rd</a></li>
-            </ul>
-          <li>February</li>
-          <li>March</li>
-        </ul>
+          <li><a href="git.html" target="iframe_blog">January 23, 2016</a></li>
+          <li><a href="" target="iframe_blog">Next blog post</a></li>
+          <!-- holder displays blog website for now -->
       </ul>
     </nav>
-    <section>
-      <h4>Blog title goes here</h4><h5>Blog date/time goes here</h5>
-      <p>Blog post goes here</p> <!-- Linked blog posts should show here when accessed from the sidebar menu. -->
+
+    <section class="main-blog-post">
+      <iframe name="iframe_blog"></iframe>
+      <!-- Implemented <iframe> for HTML5 compatibility -->
     </section>
+
+    <nav class="social">
+      <h4>Follow me:</h4>
+      <ul class="nav-social">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Soundcloud</a></li>
+      </ul>
+    </nav>
+
     <footer>
       <p>website created by Ryan Dempsey</p>
     </footer>
+
   </body>
 </html>
+
 
 <!-- Fonts:  Source Sans Pro, Roboto, Hind
      Colors:  4B51FF (main - blue), 396CE8, 3EAAFF (secondaries - bluish), 6339E8, A13EFF (secondaries - purplish) -->
