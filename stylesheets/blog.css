@@ -1,0 +1,49 @@
+.nav-main {
+  padding-top: 15px;
+}
+
+.nav-posts {
+  float: left;
+  width: 225px;
+  margin: 25px 0px 65px 0px;
+  padding-bottom: 15px;
+  border: 1px solid black;
+}
+
+.nav-posts h4 {
+  width: 100px;
+}
+
+.nav-posts ul {
+  width: 200px;
+  padding-left: 25px;
+  margin: 0px;
+  list-style-type: solid;
+}
+
+.nav-posts li {
+  width: 150px;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+
+/* .main-blog-post {
+  float: right;
+  margin: 25px 0px 65px 0px;
+  padding-right: 850px;
+  border: 1px solid black;
+  height: 300px;
+  text-align: center;
+} */
+
+/* replaced above element/code with iframe below */
+
+iframe {
+  height: 325px;
+  width: 1000px;
+  float: right;
+  margin: 25px 5px 65px 10px;
+  border: 1px solid black;
+  background-color: #396CE8; /* #32B6FF; */ /* #6339E8; */
+}
