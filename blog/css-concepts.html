@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>Blog Post #2</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <main>
+    <h1>Positioning in CSS:  A Very Brief Overview</h1>
+    <h2>What are the differences between static, relative, absolute, and fixed positioning?</h2>
+    <h4>Sunday, February 7, 2016</h4>
+
+    <section>
+      <p>
+        Ah, yes.  Positioning in CSS.  You can add borders, change colors and fonts, and even make your links do cool stuff with ease.  Positioning shouldn't be any different, right?  It should only take a little while.  Let's get to it!  (Fast forward four hours later...)  After much trial and error (and more than a little frustration), you finally got your navigation bar setup like you want it!  Now just got place the rest of the elements on the page...
+
+      </p>
+        The above paragraph isn't too far from reality for most of us (present company included.)  What makes positioning in CSS often such a frustrating task?  I have this element in place now why are all the rest of them wonky?!  In this entry, I want to try to help ease this pain a little bit by delving briefly into the differences between the various forms of positioning available in CSS.
+      <p>
+
+      <p>
+        Each HTML element can be moved around the screen by using the "position"
+        attribute in CSS.  This attribute has six different property values, the main four which we will cover here are:  relative, absolute, fixed, and static.  Each of these has their different uses and ablities and here they'll each be broken down a little for you.
+      </p>
+
+      <p>
+        The default value for an element is "static" which means just that:  it appears on the page in normal flow, one after another down the page vertically.  This could be used for headers, paragraphs, and other text that needs to remain fairly uniform on the screen.
+      </p>
+
+      <p>
+        Relative positioning is a little bit more dynamic.  This means that an element is placed <i>relative</i> to it's regular position in normal HTML flow.  You can move an element with a position value of relative by altering the margin and padding attributes.  This will allow you to offset text, images, or other elements in regards to their surrounding elements, which can be used as sidebars or the like.
+      </p>
+
+      <p>
+        A little more tricky is absolute positioning.  When an element is given this "position" value, it is removed from normal flow and is positioned in relation to the element that contains it.  This will not affect the position of any of the surrounding elements.  A good example of this is text within a div:  the text can be moved about within the div without disturbing the position of the content of the element next to it.
+      </p>
+
+      <p>
+        And finally, there's fixed positioning.  This is a little similar to absolute positioning but here the element is positioned relative to the browser window as opposed to its containing element.  This is useful for a toolbar or navigation bar that you want to have visible as you scroll through the content of a page.
+      </p>
+
+      <p>
+        As I said, this was a very brief overview of the different values for the position attribute but I hope that it shed a little light on this tricky subject.  There are many great resources out there that go into greater depth (I think <a href="http://www.w3schools.com/cssref/pr_class_position.asp">W3Schools</a> is a good springboard) and I recommend doing some research if this is something you have trouble with.  Please feel free to contact me with any questions or suggestions.  Happy coding!
+      </p>
+
+      </section>
+    </main>
+  </body>
+  </html>
