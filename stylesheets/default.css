@@ -1,6 +1,8 @@
 body{
   font-family: Arial;
-  background-color: #1651E8; /* #396CE8; */
+  /*background-color: #1651E8;*/ /* #396CE8; */
+  background: url("../imgs/aiako_bkgrnd.jpg");
+  background-size: 100%;
 }
 
 .header {
@@ -10,19 +12,20 @@ body{
 }
 
 a:link {
-  color: #3425FF;
+  color: #2B2B2B; /*#3425FF;*/
 }
 
 a:visited {
-  color: #7B33E8; /* #8840E8 */
+  color: #2639C9; /*#7B33E8;*/ /* #8840E8 */
 }
 
 nav {
   border-bottom: 1px solid black;
   text-align: center;
-  background-color: #396CE8; /* #32B6FF */ /* #6339E8 */
+    background-color: #737A7D; /*#396CE8;*/ /* #32B6FF */ /* #6339E8 */
   margin-top: 0px;
   padding: 10px 0px 0px 0px;
+  width: 100%;
 }
 
 nav ul {
@@ -36,20 +39,21 @@ nav li {
   padding: 0px 80px 0px 80px;
 }
 
-.photo {
-  height: 265px;
-  width: 160px;
-  padding: 15px 0px 15px 200px;
-  float: left;
-  margin: 25px 0px 65px 0px;
-}
-
 .intro-text {
   height: 265px;
-  width: 500px;
-  float: right;
-  padding: 15px 200px 15px 0px;
-  margin: 25px 0px 65px 0px;
+  width: 50%;
+  display: inline-block;
+  margin: 50px 0px 100px 0px;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  color: black;
+}
+
+p {
+  width: 25%
+  padding-left: 25%;
+  display: inline-block;
 }
 
 .social {
@@ -64,8 +68,9 @@ nav li {
 }
 
 .nav-social {
-  width: 1100px;
+  width: 100%;
   display: inline;
+  margin: 0px;
 }
 
 .nav-social li {
