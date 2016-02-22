@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Blog Post #4</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="arrays-hashes.css">
+</head>
+<body>
+  <main>
+    <h1>Enumberables</h1>
+    <h2>A brief look at the "map" method (and "each" too!)</h2>
+    <h4>Monday, February 22, 2016</h4>
+
+    <section>
+      <p>
+        When delving a little further into Ruby, you will come across a couple of very useful data structures and the understanding of which will be immensely useful to you in your future as a Ruby (or any other language, really) programmer.  I'm talking about arrays and hashes.  I discussed the basics of these two in my last post but today I want to get a little more into how to manipulate the data that these structures contain.
+      </p>
+
+      <p>
+        So, you know how to create arrays and hashes now and you know how to put some data into them.  But how do you use the data that you've stored?  Well, all objects in Ruby (and EVERYTHING in Ruby is an object.  Really.  Everything.) have what are called built-in methods.  Methods are basically little routines that you can call upon your object to perform some pre-specified task on said object.  There are many that are common to all objects and others that are common to only certain types of objects.  Today I'll cover a couple, but one in particular:  <code>map</code>.
+      </p>
+
+      <p>
+        However, before we jump to the discussion of the <code>map</code> method, I would like to build up to that by touching on the <code>each</code> method.  <code>each</code> allows you to iterate (which is another way of saying of doing something repeatedly) over an array or hash, going over each element that you have stored in it.  A method call for <code>each</code> would look something like this:
+      </p>
+
+      <div>
+      <blockquote>
+      <pre>
+        <code>
+          new_array = Array.new
+          new_array.each do |x|
+            # your code goes here
+          end
+        </code>
+      </pre>
+      </blockquote>
+      </div>
+
+      <p>
+        What our example shows is the creation of a new array called (you guessed it) <code>new_array</code>.  We are then calling the method <code>each</code> on <code>new_array</code>.  As you can see, you do this by using a "<code>.</code>" to let <code>new_array</code> (or another object) know that it is being told to perform the method on the right, <code>each</code>.  Now, along with <code>each</code> is a little bit of setup:  you have <code>do |x|</code> next to it, which tells <code>each</code> to "do (x) action" to whatever is contained in <code>new_array</code>.  That action is determined by the code block of your design on the following line(s).  As with a lot of things in Ruby, don't forget to finish your code block with the word <code>end</code>.  This method works the same for hashes as well, but instead of working with one variable, you are working with two:  one for your keys and one for your variables.
+      </p>
+
+      <p>
+        So, let's talk about <code>map</code>.  <code>map</code> is very similar to <code>each</code> in that it also iterates over the array/hash but where it differs from <code>each</code> is that after iterating through the array/hash and performing it's code on each element, it then outputs the result into a new array.  Pretty nifty, huh?  The setup looks very similar, except we're going to give <code>map</code> it's code block a little differently:
+      </p>
+
+      <div>
+      <blockquote>
+      <pre>
+        <code>
+          new_array = [1, 2, 3, 4]
+          new_array.map {|x| x + 1}
+        </code>
+      </pre>
+      </blockquote>
+      </div>
+
+      <p>
+        In this example, I've already put four elements into our <code>new_array</code> and then in the next line, I'm telling it use the <code>map</code> method to perform the code block <code>{|x| x + 1|}</code>.  This means that for each element, <code>map</code> will add 1 to it, then output the result into a new array which would look like this:
+      </p>
+
+      <div>
+      <blockquote>
+      <pre>
+        <code>
+          [2, 3, 4, 5]
+        </code>
+      </pre>
+      </blockquote>
+      </div>
+
+      <p>
+        Simple enough.  Now, as a bit of a warning (and also if you ever need to use it) <code>map</code> has a destructive sibling, <code>map!</code>.  "Destructive" is a bit of a tricky term in Ruby as it can mean slightly different things in different places.  This usage here is of the more drastic variety.  If you were to call <code>map!</code> in the above example as opposed to <code>map</code>, it would permanently change the contents of <code>new_array</code> and not output the result of the code block into a separate array.  This can be useful at times, but also a little confusing and potentially catastrophic when you're just starting out.
+      </p>
+
+      <p>
+        Again, I hope that this was a helpful introduction to the <code>each</code> and <code>map</code> methods.  I highly recommend toying around with these (and other methods) in irb to get a better feel of how these work.  Then you can try them out in your own code!  For further information regarding these and all other things Ruby, please make great use of the <a href="http://ruby-doc.org/">Ruby Documentation</a>, and for this demonstration, specifically the section on <a href="http://ruby-doc.org/core-2.3.0/Enumerable.html">Enumberables</a> (this is the module to which <code>each</code> and <code>map/map!</code> and many other useful methods belong.)  This will be an invaluable resource to you in your future as a Rubyist.  Feel free to contact me with any comments, questions, or concerns.  Now, by all means, get out there and create!
+
+      </section>
+    </main>
+  </body>
+  </html>
