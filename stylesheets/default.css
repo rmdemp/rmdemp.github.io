@@ -22,7 +22,7 @@ a:visited {
 nav {
   border-bottom: 1px solid black;
   text-align: center;
-    background-color: #737A7D; /*#396CE8;*/ /* #32B6FF */ /* #6339E8 */
+  background-color: #737A7D; /*#396CE8;*/ /* #32B6FF */ /* #6339E8 */
   margin-top: 0px;
   padding: 10px 0px 0px 0px;
   width: 100%;
@@ -93,7 +93,7 @@ footer {
   text-align: center;
   font-size: 10px;
   clear: both;
-  padding-top: 65px;
+  padding-top: 50px;
 }
 
 #icon {
