@@ -44,7 +44,18 @@ nav li {
   width: 50%;
   display: inline-block;
   margin: 50px 0px 100px 0px;
-  padding-left: 25%;
+  padding-left: 26%;
+  padding-right: 25%;
+  text-align: center;
+  color: black;
+}
+
+.about-text {
+  height: 265px;
+  width: 50%;
+  display: inline-block;
+  margin: 50px 0px 100px 0px;
+  padding-left: 26%;
   padding-right: 25%;
   text-align: center;
   color: black;
@@ -82,7 +93,7 @@ footer {
   text-align: center;
   font-size: 10px;
   clear: both;
-  padding-top: 30px;
+  padding-top: 65px;
 }
 
 #icon {
