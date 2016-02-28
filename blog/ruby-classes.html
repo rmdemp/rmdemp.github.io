@@ -17,7 +17,7 @@
       <blockquote>
       <pre>
         <code>
-          def NewClass
+          class NewClass
             # (Your code goes here)
           end
         </code>
@@ -25,7 +25,7 @@
       </blockquote>
       </div>
 
-      <p>Pretty easy, huh.  It's just like creating a new method definition except that class names must ALWAYS start with a capital letter so that Ruby can differentiate them from methods or other objects.  So our next step is to start adding some code to our new class.
+      <p>Pretty easy, huh.  It's just like creating a new method definition except that we use "class" instead of "def" to start the definition and class names must ALWAYS start with a capital letter so that Ruby can differentiate them from methods or other objects.  So now our next step is to start adding some code to our new class.
 
       <p>To help you better understand the following concepts, lets create a class that mimics a real-world object.  Let's build a new class to represent a bicycle.  The "Bike" class will be our blueprint which we'll use to make more "Bike" objects.  We'll also be putting some instance methods (meaning that these methods are only useable by this particular class) in here too so our new "Bike" objects don't just sit there doing nothing.  </p>
 
@@ -33,7 +33,7 @@
       <blockquote>
       <pre>
         <code>
-          def Bike
+          class Bike
 
             def accelerate
               # go fast!
@@ -73,7 +73,7 @@
       <blockquote>
       <pre>
         <code>
-          def Bike
+          class Bike
 
             def initialize(speed_up, slow_down, shift)
               @go_fast = speed_up
@@ -101,11 +101,11 @@
 
       <p>Hold on!  What's going on here?  What's up with all the "@" signs and variable definitions?</p>
 
-      <p>Well, what we've done is added the ability for a new Bike object to be initialized with all of the properties defined in the class.  We have it initialized to take in three arguments (speed_up, slow_down, or shift) and these correspond to the methods below them.  Accelrate, decelerate, and change_gears all define these methods.</p>
+      <p>Well, what we've done is added the ability for a new Bike object to be initialized with all of the properties defined in the class.  We have it initialized to take in three arguments (speed_up, slow_down, or shift) and we now have the "change_gears" method accepting two arguments.  These correspond to the methods below them.  Accelrate, decelerate, and change_gears all define these methods.</p>
 
       <p>Now, the "@" sign designates our new variables as "instance variables."  Instance variables are like local variables except whereas local variables can only be used within a single method our instance variables here can now be called upon and used by any method within the Bike class.  Pretty nifty, huh?  Our instance variables here point to the incoming arguments so that the new instances of the Bike class can route them to the appropriate methods.  Instance variables  will definitely come in handy when you start building your own classes with many different variables and will help keep your code DRY (Don't Repeat Yourself!)</p>
 
-      <p>Now, we can create a new "Bike" object and start using methods and passing them arguments:  </p>
+      <p>We can now create a new "Bike" object and start using methods and passing them arguments:  </p>
 
       <div>
       <blockquote>
