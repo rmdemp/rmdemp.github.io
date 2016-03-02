@@ -4,7 +4,7 @@
 
 .nav-posts {
   float: left;
-  width: 225px;
+  width: 215px;
   margin: 25px 0px 65px 0px;
   padding-bottom: 15px;
   border: 1px solid black;
@@ -12,6 +12,7 @@
 
 .nav-posts h4 {
   width: 100px;
+  padding-left: 5px;
 }
 
 .nav-posts ul {
@@ -28,22 +29,11 @@
   display: block;
 }
 
-/* .main-blog-post {
-  float: right;
-  margin: 25px 0px 65px 0px;
-  padding-right: 850px;
-  border: 1px solid black;
-  height: 300px;
-  text-align: center;
-} */
-
-/* replaced above element/code with iframe below */
-
 iframe {
   height: 400px;
   width: 1000px;
   float: right;
   margin: 25px 5px 65px 10px;
   border: 1px solid black;
-  background-color: #737A7D; /*#396CE8; #32B6FF; #6339E8; */
+  background-color: rgba(115,122,125,0.8); /*#737A7D;*/ /*#396CE8; #32B6FF; #6339E8; */
 }
