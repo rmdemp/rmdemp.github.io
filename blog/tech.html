@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Blog Post #7</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/code-blocks.css">
+</head>
+<body>
+  <main>
+    <h1>Regular Expressions</h1>
+    <h2>A very brief introduction to syntax</h2>
+    <h4>Saturday, March 13, 2016</h4>
+
+    <section>
+      <p>Today's post is going to cover another topic that is rather new to me and one which I find very interesting in my budding career as a developer.  I'll be briefly discussing regular expressions (if you couldn't tell by the title)and introducing some of their syntax.</p>
+
+      <p>According to the site <a href="http://www.regular-expressions.info/">Regular-expressions.info</a>, "a regular expression (regex or regexp for short) is a special text string for describing a search pattern."  These text strings can be as short as a single character or (to use another of their examples) as long or longer than this:  </p>
+
+      <div>
+      <blockquote>
+      <pre>
+        <code>
+          \b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b
+        </code>
+      </pre>
+      </blockquote>
+      </div>
+
+      <p>(That, by the way, is a regexp used to find any email address in a block of text.)<p>
+
+      <p>As you can see, there are a lot of other symbols mixed in here as well.  They aren't all as straightforward as the seem.  These are referred to as <i>metacharacters</i> and provide special functions within the syntax of the regexp.  There are twelve total:  </p>
+
+      <div>
+      <blockquote>
+      <pre>
+        <code>
+          \ ^ $ . | ? * + ( ) [ {
+        </code>
+      </pre>
+      </blockquote>
+      </div>
+
+      <p>As with Ruby, if you wanted to use any of these characters normally, you would have to "escape" that character using the "\" symbol.  Many programming languages use regular expressions and have different methods for implementing them so please consult the appropriate documentation to see how to use these within a given language.</p>
+
+      <p>Regular expressions also use what are known as <i>character classes</i> which will search for specific characters.  A common example would be <code>gr[ae]y</code> which would return matches for "gray" and "grey" and not "graey".  Letter order is not specific here.  Hyphens can be used within a character class (i.e. [0-9]) to search through a range and will only return one character within that range.  Dots will match a single character (i.e. gr.y will match grey, gray, gr%y.)  The caret (<code>^</code>) and <code>$</code> symbols match at the beginning and end of strings respectively.  The <code>|</code> symbol can be used in Boolean ("or" searches.)  The <code>?</code> symbol makes previous characters optional matches, the <code>*</code> symbol matches preceding characters zero or more times, and the <code>+</code> symbol matches preceding characters one or more times.</p>
+
+      <p>Today's entry is meant to be a very brief overview into the world of regular expressions.  I do plan on revisiting this subject in future posts as I learn more in order to "spread the wealth."  Regular expressions are vast and powerful tools with many, many uses and are more common than one might think.  Until next time, I recommend trying out the tutorials on <a href="http://www.regular-expressions.info/">Regular-expressions.info</a> in order to get better practical understanding of the subject and also visit the <a href="https://en.wikipedia.org/wiki/Regular_expression">Wikipedia</a> page for a more in-depth look at the history and structure of regular expressions.  As always, thanks for reading.  Please contact me with any questions, comments, or concerns and if you have any pointers for me, I'm always open!</p>
+
+      <p></p>
+      </section>
+    </main>
+  </body>
+  </html>
